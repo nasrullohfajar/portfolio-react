@@ -2,10 +2,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="flex flex-col h-screen items-start justify-center gap-10">
+    <div className="flex flex-col h-screen lg:items-start justify-center gap-10 p-8">
       <h2 className="text-2xl">HELLO WORLD!</h2>
 
-      <div className="text-left text-7xl font-bold line leading-[70px]">
+      <div className="text-3xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
         <h1>I'm Nasrulloh Fajar Muharam</h1>
         <h1>
           <span>a </span>
