@@ -21,7 +21,7 @@ function Hero() {
         and artistry
       </h3>
 
-      <div className="flex gap-5 mt-3">
+      <div className="flex justify-center gap-5 mt-3">
         <ButtonAnimated title="See More About Me" />
         <ButtonAnimated title="Download My CV" />
       </div>
