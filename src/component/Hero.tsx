@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonAnimated from "./ui/ButtonAnimated";
 
 function Hero() {
   return (
@@ -19,6 +20,11 @@ function Hero() {
         Transforming design vision into digital reality with a focus on detail
         and artistry
       </h3>
+
+      <div className="flex gap-5 mt-3">
+        <ButtonAnimated title="See More About Me" />
+        <ButtonAnimated title="Download My CV" />
+      </div>
     </div>
   );
 }
