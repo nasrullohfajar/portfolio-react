@@ -4,6 +4,19 @@ import { HiDownload } from "react-icons/hi";
 import { FaPaperPlane } from "react-icons/fa";
 
 function Hero() {
+  const downloadCV = () => {
+    fetch("cv.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "cv-Nasrulloh Fajar Muharam.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
     <div className="flex flex-col h-screen lg:items-start justify-center gap-10 p-8">
       <h2 className="text-2xl">HELLO WORLD!</h2>
@@ -33,6 +46,7 @@ function Hero() {
           title="Download My CV"
           icon={<HiDownload size={14} />}
           iconPosition="right"
+          handleClick={downloadCV}
         />
       </div>
     </div>
