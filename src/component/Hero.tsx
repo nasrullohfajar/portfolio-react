@@ -1,5 +1,7 @@
 import React from "react";
 import ButtonAnimated from "./ui/ButtonAnimated";
+import { HiDownload } from "react-icons/hi";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -22,8 +24,16 @@ function Hero() {
       </h3>
 
       <div className="flex justify-center gap-5 mt-3">
-        <ButtonAnimated title="See More About Me" />
-        <ButtonAnimated title="Download My CV" />
+        <ButtonAnimated
+          title="See More About Me"
+          icon={<FaPaperPlane />}
+          iconPosition="right"
+        />
+        <ButtonAnimated
+          title="Download My CV"
+          icon={<HiDownload size={14} />}
+          iconPosition="right"
+        />
       </div>
     </div>
   );
