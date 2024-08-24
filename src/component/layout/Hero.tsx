@@ -3,7 +3,11 @@ import ButtonAnimated from "../ui/ButtonAnimated";
 import { HiDownload } from "react-icons/hi";
 import { FaPaperPlane } from "react-icons/fa";
 
-function Hero() {
+interface HeroProps {
+  scrollToAbout: () => void;
+}
+
+const Hero = ({ scrollToAbout }: HeroProps) => {
   const downloadCV = () => {
     fetch("cv.pdf").then((response) => {
       response.blob().then((blob) => {
@@ -41,6 +45,7 @@ function Hero() {
           title="See More About Me"
           icon={<FaPaperPlane />}
           iconPosition="right"
+          handleClick={scrollToAbout}
         />
         <ButtonAnimated
           title="Download My CV"
@@ -51,6 +56,6 @@ function Hero() {
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

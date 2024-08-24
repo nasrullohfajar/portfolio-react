@@ -1,11 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import backgroundImage from "../../assets/img/photo.png";
 
-function About() {
+const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div className="flex h-screen items-center justify-center gap-x-60">
+    <div
+      ref={ref}
+      className="flex h-screen items-center justify-center gap-x-60"
+    >
       <div
-        className="relative w-1/3 h-[500px] "
+        className="relative w-1/3 h-[500px]"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -29,13 +32,13 @@ function About() {
             only function well but also make the user experience enjoyable.
           </p>
           <p>
-            When I'm not at the computer, Im usually reading, hanging out with
+            When I'm not at the computer, I'm usually reading, hanging out with
             my cats, or playing games.
           </p>
         </div>
       </div>
     </div>
   );
-}
+});
 
 export default About;
