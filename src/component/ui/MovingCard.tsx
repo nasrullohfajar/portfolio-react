@@ -103,7 +103,7 @@ const MovingCard = ({
               <div className="relative z-20 py-4 flex flex-row justify-center items-center">
                 <span className="flex gap-1">
                   <img src={item.icon} alt="" />
-                  <span className="  ml-2 leading-[1.6] font-semibold text-2xl">
+                  <span className=" flex items-center justify-center ml-2 font-semibold text-2xl">
                     {item.name}
                   </span>
                 </span>
