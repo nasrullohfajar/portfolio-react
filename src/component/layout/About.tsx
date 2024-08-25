@@ -3,7 +3,7 @@ import backgroundImage from "../../assets/img/photo.png";
 
 const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div ref={ref} className="flex items-center justify-center gap-x-60">
+    <div ref={ref} className="flex items-center justify-center gap-x-60 pt-40">
       <div
         className="w-1/3 h-[500px]"
         style={{
