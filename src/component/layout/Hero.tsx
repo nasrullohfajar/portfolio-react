@@ -9,13 +9,13 @@ interface HeroProps {
 
 const Hero = ({ scrollToAbout }: HeroProps) => {
   const downloadCV = () => {
-    fetch("cv.pdf").then((response) => {
+    fetch("cv-nasrullohfajar.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
 
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "cv-Nasrulloh Fajar Muharam.pdf";
+        alink.download = "cv-nasrullohfajar.pdf";
         alink.click();
       });
     });
