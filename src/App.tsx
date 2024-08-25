@@ -6,6 +6,7 @@ import Hero from "./component/layout/Hero";
 import About from "./component/layout/About";
 import Project from "./component/layout/Project";
 import Skill from "./component/layout/Skill";
+import Contact from "./component/layout/Contact";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -27,6 +28,7 @@ function App() {
         <About ref={aboutRef} />
         <Project />
         <Skill />
+        <Contact />
       </div>
     </>
   );
