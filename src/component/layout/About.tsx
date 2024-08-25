@@ -8,7 +8,7 @@ const About = forwardRef<HTMLDivElement>((_, ref) => {
       className="flex h-screen items-center justify-center gap-x-60"
     >
       <div
-        className="relative w-1/3 h-[500px]"
+        className="w-1/3 h-[500px]"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
