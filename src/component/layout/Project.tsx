@@ -14,7 +14,7 @@ const iconToDoList = [imgHtml, imgCss, imgJs];
 
 const Project = () => {
   return (
-    <div className="flex flex-col h-screen py-32">
+    <div className="flex flex-col">
       <h1 className="text-6xl font-bold mb-32">Recent Project</h1>
       <div className="flex w-full gap-32">
         <Card
