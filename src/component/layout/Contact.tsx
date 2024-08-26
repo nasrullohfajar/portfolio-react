@@ -3,7 +3,7 @@ import ButtonAnimated from "../ui/ButtonAnimated";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-y-2">
+    <div className="flex flex-col gap-y-2 mb-32">
       <div className="text-5xl font-bold mb-2">
         <h2 className="mb-2">Interested in bringing your ideas </h2>
         <div>

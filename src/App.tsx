@@ -7,6 +7,7 @@ import About from "./component/layout/About";
 import Project from "./component/layout/Project";
 import Skill from "./component/layout/Skill";
 import Contact from "./component/layout/Contact";
+import Footer from "./component/layout/Footer";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -30,6 +31,8 @@ function App() {
         <Skill />
         <Contact />
       </div>
+
+      <Footer />
     </>
   );
 }
