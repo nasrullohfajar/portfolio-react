@@ -24,7 +24,16 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
     <div className="flex flex-col h-screen lg:items-start justify-center gap-10">
       <h2 className="text-lg lg:text-2xl">HELLO WORLD!</h2>
 
-      <div className="text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
+      <div className="lg:hidden text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
+        <h1>
+          I'm Nasrulloh Fajar Muharam a<span> </span>
+          <span className="bg-gradient-to-r from-[#A685ED] to-[#72BDF7] bg-clip-text text-transparent">
+            Front End Developer
+          </span>
+        </h1>
+      </div>
+
+      <div className=" hidden lg:block text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
         <h1>I'm Nasrulloh Fajar Muharam</h1>
         <h1>
           <span>a </span>
