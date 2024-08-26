@@ -21,9 +21,11 @@ const Icon = [
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-between mb-16">
+    <div className="flex flex-col lg:flex-row items-center justify-between mb-16 w-full">
       <div>
-        <h3 className="text-left">Copyright &#169;2024 Nasrulloh Fajar</h3>
+        <h3 className="text-sm lg:text-left mb-4">
+          Copyright &#169;2024 Nasrulloh Fajar
+        </h3>
       </div>
 
       <div className="flex gap-x-2">

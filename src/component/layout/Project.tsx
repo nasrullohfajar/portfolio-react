@@ -17,8 +17,10 @@ const ToDoListLink = "https://nasrullohfajar.github.io/todolist-app/";
 const Project = () => {
   return (
     <div className="flex flex-col">
-      <h1 className="text-6xl font-bold mb-32">Recent Project</h1>
-      <div className="flex flex-col lg:flex-row w-full gap-32">
+      <h1 className=" text-4xl lg:text-6xl font-bold mb-12 lg:mb-32">
+        Recent Project
+      </h1>
+      <div className="flex flex-col lg:flex-row w-full gap-12 lg:gap-32">
         <Card
           img={imgPersonalNote}
           title="Personal Note"

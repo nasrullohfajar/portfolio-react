@@ -25,7 +25,7 @@ function App() {
         }
       />
 
-      <div className="flex flex-col gap-56">
+      <div className="flex flex-col gap-20 lg:gap-48">
         <About ref={aboutRef} />
         <Project />
         <Skill />

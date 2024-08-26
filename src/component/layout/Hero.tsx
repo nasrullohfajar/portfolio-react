@@ -23,9 +23,9 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
 
   return (
     <div className="flex flex-col h-screen lg:items-start justify-center gap-10">
-      <h2 className="text-2xl">HELLO WORLD!</h2>
+      <h2 className="text-lg lg:text-2xl">HELLO WORLD!</h2>
 
-      <div className="text-3xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
+      <div className="text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
         <h1>I'm Nasrulloh Fajar Muharam</h1>
         <h1>
           <span>a </span>
@@ -40,7 +40,7 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
         and artistry
       </h3>
 
-      <div className="flex justify-center gap-5 mt-3">
+      <div className="flex flex-col lg:flex-row justify-center gap-5 mt-3">
         <ButtonAnimated
           title="See More About Me"
           icon={<FaPaperPlane />}
@@ -49,7 +49,7 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
         />
         <ButtonAnimated
           title="Download My CV"
-          icon={<HiDownload size={14} />}
+          icon={<HiDownload size={20} />}
           iconPosition="right"
           handleClick={downloadCV}
         />

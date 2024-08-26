@@ -37,7 +37,9 @@ const testimonials = [
 const Skill = () => {
   return (
     <div className="flex flex-col">
-      <h1 className="text-6xl font-bold mb-32">Tech Stack</h1>
+      <h1 className="text-4xl lg:text-6xl font-bold mb-12 lg:mb-32">
+        Tech Stack
+      </h1>
       <div className="flex items-center justify-center">
         <MovingCard items={testimonials} direction="right" speed="slow" />
       </div>
