@@ -5,7 +5,7 @@ const email = "nasrullohfajar3301@gmail.com";
 const Contact = () => {
   return (
     <div className="flex flex-col gap-y-2 mb-32">
-      <div className="text-5xl font-bold mb-2">
+      <div className="text-3xl lg:text-5xl font-bold mb-2">
         <h2 className="mb-2">Interested in bringing your ideas </h2>
         <div>
           <span> to life? </span>

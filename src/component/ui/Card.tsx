@@ -19,9 +19,9 @@ const Card = ({
   isHaveLink,
 }: CardProps) => {
   return (
-    <div className="flex flex-col bg-black-900 w-1/2 rounded-xl p-10 gap-6">
+    <div className="flex flex-col bg-black-900 lg:w-1/2 rounded-xl p-10 gap-6">
       <div
-        className="bg-black-800 h-72 w-[500px] mx-auto rounded-xl"
+        className="bg-black-800 h-72 w-full mx-auto rounded-xl"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: "cover",

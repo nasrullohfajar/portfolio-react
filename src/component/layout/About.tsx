@@ -5,7 +5,7 @@ const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div ref={ref} className="flex items-center justify-center gap-x-60 pt-40">
       <div
-        className="w-1/3 h-[500px]"
+        className="hidden lg:block w-1/3 h-[500px]"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: "cover",
@@ -15,7 +15,7 @@ const About = forwardRef<HTMLDivElement>((_, ref) => {
 
       <div className="w-2/3 text-left">
         <h1 className="text-6xl font-bold mb-10">About Me</h1>
-        <div className="flex flex-col text-2xl gap-y-5">
+        <div className="flex flex-col text-xl lg:text-2xl gap-y-5">
           <p>
             I am a passionate Front-End Developer who loves paying attention to
             the details and creating web experiences that are both engaging and
