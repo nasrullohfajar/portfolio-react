@@ -85,7 +85,7 @@ const MovingCard = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
             className="flex min-w-56 relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 items-center justify-center"
             style={{
