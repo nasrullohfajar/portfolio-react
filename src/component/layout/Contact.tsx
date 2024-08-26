@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonLink from "../ui/ButtonLink";
 const email = "nasrullohfajar3301@gmail.com";
 

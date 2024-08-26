@@ -1,4 +1,3 @@
-import React from "react";
 import IconContact from "../ui/IconContact";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";

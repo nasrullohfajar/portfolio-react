@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../ui/Card";
 import imgPersonalNote from "../../assets/img/personal-note.png";
 import imgToDoList from "../../assets/img/to-do-list.png";

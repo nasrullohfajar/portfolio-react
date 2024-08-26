@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import backgroundImage from "../../assets/img/photo.png";
 
 const About = forwardRef<HTMLDivElement>((_, ref) => {

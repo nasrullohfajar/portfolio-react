@@ -1,4 +1,3 @@
-import React from "react";
 import MovingCard from "../ui/MovingCard";
 import imgCss from "../../assets/icon/css.png";
 import imgHtml from "../../assets/icon/html.png";

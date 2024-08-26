@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonAnimated from "../ui/ButtonAnimated";
 import { HiDownload } from "react-icons/hi";
 import { FaPaperPlane } from "react-icons/fa";

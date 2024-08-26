@@ -1,5 +1,3 @@
-import React from "react";
-
 interface IconContactProps {
   icon: any;
   link: string;
