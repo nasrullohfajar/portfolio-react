@@ -1,5 +1,6 @@
 import React from "react";
-import ButtonAnimated from "../ui/ButtonAnimated";
+import ButtonLink from "../ui/ButtonLink";
+const email = "nasrullohfajar3301@gmail.com";
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
       <p>Feel free to reach out if you're interested in working together</p>
 
       <div className="flex items-center justify-center mt-10 pb-40">
-        <ButtonAnimated title="Contact Me Now" iconPosition="right" />
+        <ButtonLink title="Contact Me Now" link={`mailto:${email}`} />
       </div>
     </div>
   );
