@@ -11,6 +11,8 @@ import imgTailwind from "../../assets/icon/tailwind.png";
 
 const iconPersonalNote = [imgVite, imgReact, imgJs, imgTailwind];
 const iconToDoList = [imgHtml, imgCss, imgJs];
+const personalNoteLink = "https://nasrullohfajar.github.io/personal-note/";
+const ToDoListLink = "https://nasrullohfajar.github.io/todolist-app/";
 
 const Project = () => {
   return (
@@ -22,12 +24,16 @@ const Project = () => {
           title="Personal Note"
           description="Easily capture and organize thoughts. Keep all notes in one simple, accessible place."
           icon={iconPersonalNote}
+          isHaveLink
+          link={personalNoteLink}
         />
         <Card
           img={imgToDoList}
           title="To-do List"
           description="Stay organized and on top of tasks. Manage and track to-dos with ease."
           icon={iconToDoList}
+          isHaveLink
+          link={ToDoListLink}
         />
       </div>
     </div>
