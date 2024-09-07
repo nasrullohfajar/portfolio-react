@@ -5,6 +5,7 @@ import imgJs from "../../assets/icon/js.png";
 import imgReact from "../../assets/icon/react.png";
 import imgVite from "../../assets/icon/vite.png";
 import imgTailwind from "../../assets/icon/tailwind.png";
+import imgFigma from "../../assets/icon/figma.png";
 
 const testimonials = [
   {
@@ -31,13 +32,17 @@ const testimonials = [
     icon: imgTailwind,
     name: "Tailwind",
   },
+  {
+    icon: imgFigma,
+    name: "Figma",
+  },
 ];
 
 const Skill = () => {
   return (
     <div className="flex flex-col">
       <h1 className="text-4xl lg:text-6xl font-bold mb-12 lg:mb-32">
-        Tech Stack
+        My Skills
       </h1>
       <div className="flex items-center justify-center">
         <MovingCard items={testimonials} direction="right" speed="slow" />
