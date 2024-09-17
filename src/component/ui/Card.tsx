@@ -5,20 +5,12 @@ interface CardProps {
   title: string;
   description: string;
   icon: string[];
-  isHaveLink: boolean;
   link?: string;
 }
 
-const Card = ({
-  title,
-  description,
-  img,
-  icon,
-  link,
-  isHaveLink,
-}: CardProps) => {
+const Card = ({ title, description, img, icon, link }: CardProps) => {
   return (
-    <div className="flex flex-col bg-black-900 lg:w-1/2 rounded-xl p-4 lg:p-10 gap-6">
+    <div className="flex flex-col bg-black-900 rounded-xl p-4 lg:p-10 gap-6">
       <div
         className="bg-black-800 h-36 lg:h-60 w-full mx-auto rounded-xl"
         style={{
@@ -40,16 +32,14 @@ const Card = ({
               <Icon key={idx} img={img} />
             ))}
           </div>
-          {isHaveLink && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm lg:text-xl text-[#A685ED]"
-            >
-              Go To Site
-            </a>
-          )}
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm lg:text-xl text-[#A685ED]"
+          >
+            Go To Site
+          </a>
         </div>
       </div>
     </div>

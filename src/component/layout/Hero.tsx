@@ -7,14 +7,14 @@ interface HeroProps {
 }
 
 const Hero = ({ scrollToAbout }: HeroProps) => {
-  const downloadCV = () => {
-    fetch("cv-nasrullohfajar.pdf").then((response) => {
+  const download = () => {
+    fetch("resume-nasrullohfajar.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
 
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "cv-nasrullohfajar.pdf";
+        alink.download = "resume-nasrullohfajar.pdf";
         alink.click();
       });
     });
@@ -24,7 +24,7 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
     <div className="flex flex-col h-screen lg:items-start justify-center gap-10">
       <h2 className="text-lg lg:text-2xl">HELLO WORLD!</h2>
 
-      <div className="lg:hidden text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
+      <div className="lg:hidden text-3xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
         <h1>
           I'm Nasrulloh Fajar Muharam a<span> </span>
           <span className="bg-gradient-to-r from-[#A685ED] to-[#72BDF7] bg-clip-text text-transparent">
@@ -33,7 +33,7 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
         </h1>
       </div>
 
-      <div className=" hidden lg:block text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
+      <div className="hidden lg:block text-4xl font-bold lg:text-left lg:text-7xl lg:leading-[70px]">
         <h1>I'm Nasrulloh Fajar Muharam</h1>
         <h1>
           <span>a </span>
@@ -56,10 +56,10 @@ const Hero = ({ scrollToAbout }: HeroProps) => {
           handleClick={scrollToAbout}
         />
         <ButtonAnimated
-          title="Download My CV"
+          title="My Resume"
           icon={<HiDownload size={20} />}
           iconPosition="right"
-          handleClick={downloadCV}
+          handleClick={download}
         />
       </div>
     </div>
