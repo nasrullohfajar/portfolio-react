@@ -2,11 +2,16 @@ import IconContact from "../ui/IconContact";
 import { CiLinkedin } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiDiscordLine } from "react-icons/ri";
+import { IoLogoGithub } from "react-icons/io";
 
 const Icon = [
   {
     icon: <CiLinkedin size={16} />,
     link: "https://www.linkedin.com/in/nasrullohfajar/",
+  },
+  {
+    icon: <IoLogoGithub size={16} />,
+    link: "https://github.com/nasrullohfajar",
   },
   {
     icon: <RiDiscordLine size={16} />,
